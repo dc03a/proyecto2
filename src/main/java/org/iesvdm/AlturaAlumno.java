@@ -30,8 +30,8 @@ public class AlturaAlumno { // Recorrer dos arrays con la misma longitud
                     System.out.println("Inserta el nombre del nuevo alumno:");
                     String nuevoNombre = sc.nextLine();
 
-                    alumnos = añadeNombre(alumnos, nuevoNombre);
-                    alturas = añadeAltura(alturas);
+                    alumnos = aniadeNombre(alumnos, nuevoNombre);
+                    alturas = aniadeAltura(alturas);
                     break;
 
                 case 2: // Pide un nombre, lo busca y pide la altura para modificarla
@@ -105,7 +105,7 @@ public class AlturaAlumno { // Recorrer dos arrays con la misma longitud
         int usuario = 0;
 
         System.out.println("\nElige la opción que quieres realizar:");
-        System.out.println("\t1 -> Añadir nuevo alumno"); // pide nombre y pone por defecto 1,5 de altura
+        System.out.println("\t1 -> Aniadir nuevo alumno"); // pide nombre y pone por defecto 1,5 de altura
         System.out.println("\t2 -> Modificar altura alumno"); // PIDE NOMBRE y luego pide nueva altura
         System.out.println("\t3 -> Mostrar todo"); // Muestra la tabla de nombres con sus alturas
         System.out.println("\t4 -> Incrementar altura"); // Pide el incremento
@@ -120,11 +120,11 @@ public class AlturaAlumno { // Recorrer dos arrays con la misma longitud
     }
 
     /**
-     * Añade un alumno al final del array
+     * Aniade un alumno al final del array
      * @param array,nombre
      * @return nuevo
      */
-    static String[] añadeNombre(String[] array, String nombre)
+    static String[] aniadeNombre(String[] array, String nombre)
     {
         String[] nuevo = new String[array.length+1];
 
@@ -139,11 +139,11 @@ public class AlturaAlumno { // Recorrer dos arrays con la misma longitud
     }
 
     /**
-     * Añade una altura al final del array con un valor por defecto
+     * Aniade una altura al final del array con un valor por defecto
      * @param array
      * @return nuevo
      */
-    static double[] añadeAltura(double[] array)
+    static double[] aniadeAltura(double[] array)
     {
         double[] nuevo = new double[array.length+1];
         double alturaPorDefecto = 1.5;
